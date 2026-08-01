@@ -1,0 +1,13 @@
+{
+  "name": "obs-remote-monorepo",
+  "private": true,
+  "workspaces": [
+    "shared",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "bun --filter '*' dev",
+    "build": "bun --filter '*' build",
+    "start": "bun --filter '*' start"
+  }
+}
